@@ -6,7 +6,10 @@ namespace csharp_design_patterns_project
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           PrimaryPlayer player = PrimaryPlayer.Instance;
+           Console.WriteLine($"{player.Name} -lvl {player.Level}");
+            Console.ReadKey(); ;
         }
+
     }
 }
